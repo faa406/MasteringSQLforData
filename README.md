@@ -1,158 +1,111 @@
 # MasteringSQLforData
 
-This repository is a structured, self-paced SQL learning roadmap designed to build foundational to advanced SQL skills for data roles including Data Analyst, Data Scientist, and Data Engineer.
-
-The goal is to gain proficiency in querying, manipulating, and analyzing data using SQL, aligned with real-world business use cases and interview expectations. This repository tracks weekly progress with concepts, structured exercises, and hands-on project work.
-
----
-
-## 🔹 4-Week SQL Learning Plan
-
-### Week 1: SQL Fundamentals (Data Retrieval)
-
-> Objective: Understand databases and learn how to retrieve and summarize data using core SQL operations.
-
-#### Topics:
-- Basic SQL syntax
-- Understanding tables, rows, columns, primary keys, and foreign keys
-- SELECT, FROM, WHERE, ORDER BY
-- DISTINCT
-- Aggregations: COUNT, SUM, AVG, MIN, MAX
-- GROUP BY and HAVING
-- Filtering and sorting logic
-
-#### Practice:
-- Write and execute basic SQL queries on public platforms such as LeetCode, SQLZoo, or Mode Analytics.
+This repository is a personal learning resource to master SQL for data analysis.  
+It contains a structured 4-week roadmap from basics to advanced topics, practical exercises, and project ideas.  
+The focus is on building strong SQL skills to extract, manipulate, and analyze data effectively.
 
 ---
 
-### Week 2: Intermediate SQL (Joins & Data Modeling)
+## Overview
 
-> Objective: Learn how to combine and query data from multiple tables and understand relational data models.
+SQL (Structured Query Language) is the foundational skill for querying and managing data stored in relational databases.  
+This repository guides you through a progressive learning path with clear weekly goals:
 
-#### Topics:
-- Relational database concepts
-- INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN, CROSS JOIN
-- Subqueries (correlated and non-correlated)
-- Set operations: UNION, INTERSECT, EXCEPT
+- Week 1: SQL Basics  
+- Week 2: Intermediate SQL & JOINs  
+- Week 3: Advanced SQL & Window Functions  
+- Week 4: Complex Queries with CTEs and Subqueries  
 
-#### Practice:
-- Multi-table joins and relationship-based queries
-- Self joins and conditional joins
-- Subquery-based filtering and aggregation
+By following this roadmap, you will be able to write efficient SQL queries, perform complex data transformations, and prepare data for further analysis in Python or other tools.
 
 ---
 
-### Week 3: Advanced SQL (Window Functions & Logic)
+## Weekly Breakdown
 
-> Objective: Develop advanced querying skills using window functions, conditional logic, and string/date manipulation.
+### Week 1: SQL Basics
 
-#### Topics:
-- Window Functions: ROW_NUMBER(), RANK(), DENSE_RANK(), LAG(), LEAD()
-- Partitioning data using PARTITION BY
-- CASE statements and IF logic
-- String manipulation (e.g., CONCAT, TRIM, LENGTH)
-- Date/time functions and arithmetic
-- Common Table Expressions (CTEs)
-- Query optimization basics (conceptual): indexes, execution plans
-
-#### Practice:
-- Real-world scenarios using advanced queries
-- Time-based comparisons
-- Ranking and lag/lead across partitions
+- Understand relational database concepts: tables, rows, columns, keys  
+- Learn basic CRUD operations:  
+  - SELECT, INSERT, UPDATE, DELETE  
+- Filtering data with WHERE, DISTINCT, ORDER BY  
+- Aggregations: COUNT, SUM, AVG, MIN, MAX  
+- Grouping data using GROUP BY and filtering groups with HAVING  
+- Practice simple queries on online platforms or sample datasets  
 
 ---
 
-### Week 4: Capstone Project – SQL Analysis on Real Dataset
+### Week 2: Intermediate SQL — JOINs and Combining Data
 
-> Objective: Apply all learned concepts to a real-world dataset and simulate an analytics use case.
-
-#### Project:
-- Choose dataset (e.g., e-commerce, COVID-19, online retail from Kaggle)
-- Perform data exploration, aggregation, and reporting using SQL
-- Design and execute complex multi-step queries using JOINs, CTEs, window functions
-- Document queries, outputs, and insights in a Jupyter Notebook or markdown file
+- Understand relational databases and table relationships  
+- Master JOIN types: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN  
+- Write subqueries and nested queries  
+- Use set operations: UNION, INTERSECT, EXCEPT  
+- Practice complex multi-table queries  
 
 ---
 
-## 🔹 Structured SQL Practice Sections
+### Week 3: Advanced SQL & Optimization
 
-This section includes categorized SQL problem sets with clear use cases and schemas for direct practice and mastery.
-
-### 1. Window Functions
-
-Functions: ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD
-
-Example Scenarios:
-- Top-N employees per department
-- Latest order per customer
-- Monthly revenue comparisons
-- Stock price next-day analysis
-
-### 2. Partitioning (PARTITION BY)
-
-Use cases:
-- Salary ranking within departments
-- Rolling average order value per customer
-- First purchase flags
-- Spend increase detection per customer
-
-### 3. Common Table Expressions (CTE)
-
-Use cases:
-- Top customers per month
-- Second highest transaction
-- Days with sales over thresholds
-- High earners by department
-
-### 4. Joins
-
-Join Types: INNER, LEFT, RIGHT, FULL OUTER, CROSS JOIN
-
-Use cases:
-- Orders with customer & product info
-- Products never sold
-- Manager and employee mappings
-- Category-wise revenue
-
-### 5. Subqueries
-
-Types: Scalar, Correlated, EXISTS/NOT EXISTS
-
-Use cases:
-- Customers with above-average spend
-- Second highest salary
-- Customers who ordered all products
-- Departments with only one employee
-
-### 6. Aggregations & Grouping
-
-Use cases:
-- Revenue per product/category
-- Orders per customer per year
-- Most popular product each month
-- Customers with highest order frequency
+- Learn Common Table Expressions (CTEs) using WITH clauses  
+- Advanced window functions: ROW_NUMBER(), RANK(), DENSE_RANK(), LAG(), LEAD()  
+- Use CASE statements and conditional logic in queries  
+- Work with date/time and string functions  
+- Understand basic indexing and query optimization concepts  
+- Practice writing efficient and readable queries  
 
 ---
 
-## 🔹 Interview Preparation: Core SQL Theory Questions
+### Week 4: Complex Queries with CTEs and Subqueries
 
-- **What types of joins are there?**
-- **What is a primary key vs. a foreign key?**
-- **What is normalization and why is it important?**
-- **What aggregate functions are commonly used?**
-- **What's the difference between LEFT JOIN and LEFT OUTER JOIN?**
-- **What is a CTE and when should you use it?**
-
----
-
-## 🔹 Notes
-
-- This repository is built for **personal learning and progression tracking**.
-- Weekly folders will contain SQL scripts, query notebooks, and markdown files documenting learnings and practice.
-- Final project folder will include data, queries, and insights from the capstone analysis.
+- Deepen knowledge of CTEs and subqueries  
+- Solve real-world analytical problems requiring multi-step queries  
+- Combine aggregation, filtering, window functions, and joins in complex scenarios  
+- Build a mini project using a real-world dataset (e.g., Kaggle e-commerce or COVID-19 data)  
+- Create data summaries and dashboards by writing SQL queries  
 
 ---
 
-## 📁 Repo Structure (Planned)
+## Practice Examples: Window Functions & Analytical Queries
 
+### Window Functions
+
+- **ROW_NUMBER()**: Assign sequential row numbers within partitions  
+- **RANK()** and **DENSE_RANK()**: Assign ranks with and without gaps  
+- **LAG()** and **LEAD()**: Access previous or next rows in ordered partitions  
+
+**Example exercises:**  
+- Top N employees per department  
+- Latest order per customer  
+- Ranking students by exam score  
+- Comparing monthly revenues  
+
+---
+
+### Common SQL Concepts and Questions
+
+- Types of JOINs and their use cases  
+- Primary keys and foreign keys explained  
+- Aggregate functions overview  
+- Differences between LEFT JOIN and LEFT OUTER JOIN  
+- Basics of database normalization and its purpose  
+
+---
+
+## Suggested Approach
+
+- Dedicate time each week to theory, practice, and mini exercises  
+- Write and test queries using a SQL environment or online playground  
+- Keep notes of challenging concepts and revisit them  
+- Gradually build complexity from single-table queries to multi-table analytics  
+- Document your learning progress and key query patterns in this repo  
+
+---
+
+## Final Notes
+
+This repository is a personal study guide and reference to track SQL mastery for data analysis roles.  
+It will serve as the foundation before moving to statistics, Python, and data projects.
+
+---
+
+*Start practicing SQL basics from tomorrow and update this repo regularly with notes, queries, and exercises.*
